@@ -2,3 +2,10 @@
 *.log
 *.out
 *.pdf
+*.4tc
+*.bbl
+*.blg
+*.dvi
+*.odt
+*.tmp
+*.xref
