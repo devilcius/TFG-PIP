@@ -48,7 +48,7 @@ import matplotlib.pyplot as plt
 N_SUBJECTS = 8
 SESSIONS = np.arange(1, 21)
 GROUPS: Dict[str, Dict[str, float]] = {
-    "AIS":  {"plateau": 2200, "k": 0.30},
+    "A–ES":  {"plateau": 2200, "k": 0.30},
     "A+ES": {"plateau": 1800, "k": 0.25},
     "G+ES": {"plateau": 1200, "k": 0.20},
     "G–ES": {"plateau":  800, "k": 0.15},
@@ -80,8 +80,8 @@ def load_or_simulate_data(seed: int = 42) -> Dict[str, np.ndarray]:
 # Gráficas ---------------------------------------------------------------------
 # -----------------------------------------------------------------------------
 
-LINE_STYLES = {"AIS": "-", "A+ES": "--", "G+ES": ":", "G–ES": "-."}
-MARKERS = {"AIS": "o", "A+ES": "s", "G+ES": "^", "G–ES": "d"}
+LINE_STYLES = {"A–ES": "-", "A+ES": "--", "G+ES": ":", "G–ES": "-."}
+MARKERS = {"A–ES": "o", "A+ES": "s", "G+ES": "^", "G–ES": "d"}
 
 
 def plot_timecourse(data: Dict[str, np.ndarray], out_path: str) -> None:
@@ -108,7 +108,6 @@ def plot_timecourse(data: Dict[str, np.ndarray], out_path: str) -> None:
 
     ax.set_xlabel("sesión")
     ax.set_ylabel("lametones")
-    ax.set_title("evolución temporal de la polidipsia inducida por programa")
     ax.legend(title="condición")
     ax.grid(True)
     fig.tight_layout()
@@ -118,7 +117,7 @@ def plot_timecourse(data: Dict[str, np.ndarray], out_path: str) -> None:
 
 def plot_boxplot(data: Dict[str, np.ndarray], out_path: str) -> None:
     """Genera la figura de boxplots del bloque final (Figura 2)."""
-    groups_order = ["AIS", "A+ES", "G+ES", "G–ES"]
+    groups_order = ["A–ES", "A+ES", "G+ES", "G–ES"]
     final_block = [data[g][:, 15:20].mean(axis=1) for g in groups_order]
 
     fig, ax = plt.subplots(figsize=(6, 5))
@@ -144,7 +143,6 @@ def plot_boxplot(data: Dict[str, np.ndarray], out_path: str) -> None:
 
     ax.set_xlabel("condición de alojamiento")
     ax.set_ylabel("lametones")
-    ax.set_title("lametones en bloque final (sesiones 16‑20)")
     ax.grid(axis="y")
     fig.tight_layout()
     fig.savefig(out_path, dpi=300)

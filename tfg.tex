@@ -1,5 +1,6 @@
 \documentclass[12pt,a4paper]{article}
 
+\usepackage{caption}
 \usepackage[utf8]{inputenc}
 \usepackage[spanish]{babel}
 \usepackage{url}
@@ -14,9 +15,11 @@
 \usepackage{booktabs}
 \usepackage{fontspec}
 \usepackage{setspace}
+\usepackage{tabularx}
 \onehalfspacing
 \setmainfont{Times New Roman}
 \definecolor{azul}{rgb}{0.0, 0.53, 0.74}
+\addto\captionsspanish{\renewcommand{\tablename}{Tabla}}
 
 \title{El aislamiento y el enriquecimiento sensorial modulan de forma diferencial la polidipsia inducida por programa en ratas Wistar macho}
 \author{Marcos Peña Sánchez-Covisa}
@@ -52,9 +55,9 @@
     \begin{center}
     \begin{minipage}{0.9\textwidth}
     \noindent
-    La polidipsia inducida por programa (PIP) es una conducta adjuntiva que surge bajo programas de reforzamiento intermitente y se ha propuesto como modelo de afrontamiento compulsivo. El presente estudio analiza cómo la privación social y el enriquecimiento sensorial interactúan en la expresión de la PIP. Treinta y dos ratas Wistar macho (ocho semanas) se distribuyeron aleatoriamente en cuatro condiciones de alojamiento: aislamiento sin estímulos físicos (AIS), aislamiento con objetos manipulables (A+ES), vida en grupo con estímulos (G+ES) y vida en grupo sin estímulos (G--ES). Tras catorce días de alojamiento diferencial, los animales completaron veinte sesiones diarias de 60 min bajo un programa FI-30 s de entrega de alimento. Se registraron lametones al biberón, entradas al comedero y cruces de zona.
+    La polidipsia inducida por programa (PIP) es una conducta adjuntiva que surge bajo programas de reforzamiento intermitente y se ha propuesto como modelo de afrontamiento compulsivo. El presente estudio analiza cómo la privación social y el enriquecimiento sensorial interactúan en la expresión de la PIP. Treinta y dos ratas Wistar macho (ocho semanas) se distribuyeron aleatoriamente en cuatro condiciones de alojamiento: aislamiento sin estímulos físicos (A--ES), aislamiento con objetos manipulables (A+ES), vida en grupo con estímulos (G+ES) y vida en grupo sin estímulos (G--ES). Tras catorce días de alojamiento diferencial, los animales completaron veinte sesiones diarias de 60 min bajo un programa FI-30 s de entrega de alimento. Se registraron lametones al biberón, entradas al comedero y cruces de zona.
     
-    Los resultados esperados revelan un gradiente decreciente de PIP (AIS > A+ES > G+ES > G--ES) con efectos principales significativos de la condición de alojamiento y de la sesión, así como su interacción. La interacción social atenúa la PIP más eficazmente que la estimulación sensorial; esta última, en ausencia de compañía, potencia la conducta.
+    Los resultados esperados revelan un gradiente decreciente de PIP (A--ES > A+ES > G+ES > G--ES) con efectos principales significativos de la condición de alojamiento y de la sesión, así como su interacción. La interacción social atenúa la PIP más eficazmente que la estimulación sensorial; esta última, en ausencia de compañía, potencia la conducta.
 
     Estos hallazgos sugieren que la PIP funciona como estrategia de autorregulación ante la privación socio-emocional y que el enriquecimiento físico, aplicado a sujetos vulnerables, puede tener efectos paradójicos. Se discuten implicaciones para los protocolos de bienestar animal y para los modelos preclínicos de compulsividad, resaltando la necesidad de considerar el contexto social en la prevención de conductas desadaptativas.
     
@@ -73,9 +76,9 @@
     \begin{center}
     \begin{minipage}{0.9\textwidth}
     \noindent
-    Schedule-induced polydipsia (SIP) is an adjunctive behaviour emerging under intermittent food schedules and has been advanced as a model of compulsive coping. This study examines how social deprivation and sensory enrichment interact to modulate SIP expression. Thirty-two male Wistar rats (eight weeks old) were randomly assigned to four housing conditions: isolated without physical stimuli (AIS), isolated with manipulable objects (A+ES), group-housed with objects (G+ES), and group-housed without objects (G--ES). After fourteen days of differential housing, animals underwent twenty 60-min daily sessions on a fixed-interval 30-s food schedule. Licks on a water spout, feeder entries, and zone crossings were recorded.
+    Schedule-induced polydipsia (SIP) is an adjunctive behaviour emerging under intermittent food schedules and has been advanced as a model of compulsive coping. This study examines how social deprivation and sensory enrichment interact to modulate SIP expression. Thirty-two male Wistar rats (eight weeks old) were randomly assigned to four housing conditions: isolated without physical stimuli (A--ES), isolated with manipulable objects (A+ES), group-housed with objects (G+ES), and group-housed without objects (G--ES). After fourteen days of differential housing, animals underwent twenty 60-min daily sessions on a fixed-interval 30-s food schedule. Licks on a water spout, feeder entries, and zone crossings were recorded.
     
-    The expected data show a descending gradient of SIP (AIS > A+ES > G+ES > G--ES), with significant main effects of housing condition and session, plus their interaction. Social interaction attenuates SIP more effectively than physical enrichment; enrichment alone, in the absence of conspecifics, paradoxically enhances the behaviour.
+    The expected data show a descending gradient of SIP (A--ES > A+ES > G+ES > G--ES), with significant main effects of housing condition and session, plus their interaction. Social interaction attenuates SIP more effectively than physical enrichment; enrichment alone, in the absence of conspecifics, paradoxically enhances the behaviour.
 
     These findings support the view that SIP serves as a self-regulatory strategy under socio-emotional deprivation and that sensory enrichment can exacerbate compulsive patterns in vulnerable subjects. Implications are discussed for animal-welfare protocols and for preclinical models of compulsivity, underscoring the importance of social context in preventing maladaptive coping behaviours.
     
@@ -112,7 +115,7 @@ El enriquecimiento ambiental tampoco es intrínsecamente protector. \citet{Branc
 
 Aunque diversos trabajos han abordado el papel del aislamiento social o del enriquecimiento ambiental por separado, son escasos los estudios que examinan su interacción de forma sistemática en relación con la PIP. La contradicción entre resultados que apuntan a un efecto protector del enriquecimiento y otros que sugieren una potenciación paradójica de la conducta compulsiva pone de relieve la necesidad de clarificar los mecanismos subyacentes. Esta ambigüedad limita la validez del paradigma como modelo de afrontamiento y plantea dudas sobre su aplicabilidad traslacional. En este sentido, el presente trabajo busca responder a una pregunta central: \textit{¿cómo interactúan el contexto social y la estimulación sensorial en la modulación de la PIP?} Al aportar un diseño que permite contrastar esta interacción de forma controlada, se espera contribuir a delimitar las condiciones bajo las cuales la PIP refleja una estrategia adaptativa frente al estrés o, por el contrario, una manifestación de vulnerabilidad emocional.
 
-A partir de esta evidencia, planteamos la siguiente hipótesis: se observará un efecto principal del aislamiento social (incremento de la PIP) y de la estimulación sensorial (reducción de la PIP), con una interacción tal que la magnitud de la PIP seguirá el siguiente gradiente: aislamiento sin estimulación sensorial (AIS) > aislamiento con estimulación sensorial (A+ES) > grupo con estimulación sensorial (G+ES) > grupo sin estimulación sensorial (G–ES). La finalidad del presente trabajo es proponer un diseño experimental contrastable que permita poner a prueba esta interacción y delimitar el papel diferencial de cada variable.
+A partir de esta evidencia, planteamos la siguiente hipótesis: se observará un efecto principal del aislamiento social (incremento de la PIP) y de la estimulación sensorial (reducción de la PIP), con una interacción tal que la magnitud de la PIP seguirá el siguiente gradiente: aislamiento sin estimulación sensorial (A--ES) > aislamiento con estimulación sensorial (A+ES) > grupo con estimulación sensorial (G+ES) > grupo sin estimulación sensorial (G–ES). La finalidad del presente trabajo es proponer un diseño experimental contrastable que permita poner a prueba esta interacción y delimitar el papel diferencial de cada variable.
 
 Aunque la propuesta se circunscribe al nivel preclínico, dilucidar cómo el contexto social y la estimulación ambiental modulan la PIP podría contribuir a perfilar modelos animales más precisos sobre la compulsividad y la búsqueda de alivio emocional, un conocimiento que, a largo plazo, podrá informar la investigación traslacional en trastornos humanos con perfiles semejantes.
 
@@ -127,7 +130,7 @@ Treinta y dos ratas macho Wistar (Charles River Laboratories, Lyon, Francia) de 
 
 Los sujetos se asignarán aleatoriamente (n~=~8 por grupo) a cuatro condiciones de alojamiento mantenidas durante catorce días previos a la fase conductual y a lo largo de todo el experimento: 
 \begin{enumerate}
-    \item \textbf{AIS}: aislamiento sin estimulación sensorial;
+    \item \textbf{A--ES}: aislamiento sin estimulación sensorial;
     \item \textbf{A+ES}: aislamiento con estimulación sensorial;
     \item \textbf{G+ES}: jaulas sociales de cuatro animales con la misma estimulacion sensorial;
     \item \textbf{G--ES}: jaulas sociales sin estimulación sensorial.
@@ -158,7 +161,7 @@ Inmediatamente antes y después de cada sesión se pesará el biberón (±0,1~g)
 \textit{Variables registradas.} Se registrarán tres variables dependientes: el número de lametones por sesión (índice primario de PIP), el número de entradas al comedero en los 5 s posteriores a cada entrega y los cruces entre zonas (como medida de actividad locomotora). El volumen de agua puede seguir midiéndose como respaldo metodológico, pero no se incluiría como variable dependiente analizada.
 
 
-\textit{Análisis de datos.} Se aplicará un ANOVA de medidas repetidas con Condición (AIS, A+ES, G+ES, G--ES) como factor entre sujetos y Sesión (1–20) como factor intra-sujeto.
+\textit{Análisis de datos.} Se aplicará un ANOVA de medidas repetidas con Condición (A--ES, A+ES, G+ES, G--ES) como factor entre sujetos y Sesión (1–20) como factor intra-sujeto.
 
 La esfericidad se comprobará con la prueba de Mauchly; cuando fuera necesario, se corregirá con $\varepsilon$ de Greenhouse–Geisser. Los efectos se reportarán con valores F, $p$ y $\eta^2_p$ (tamaño del efecto parcial). Se realizarán comparaciones \textit{post hoc} con prueba Tukey HSD ($\alpha$~=~0.05). Las variables se inspeccionarán para verificar normalidad (prueba de Shapiro--Wilk) y se eliminarán valores atípicos mayores a $3$~DE, previa justificación en el registro preanálisis.
 
@@ -170,54 +173,62 @@ Esta metodología permite evaluar simultáneamente el impacto de la privación s
 
 \section{Resultados}
 
-A continuación se presenta la pauta de resultados que se prevé obtener con el protocolo descrito. Todos los resultados que se muestran son hipotéticos y derivados del diseño propuesto, no de datos empíricos reales. Los valores se expresan como media ± error estándar de la media (SEM) y se analizarán mediante un ANOVA mixto con condición de alojamiento (AIS, A+ES, G+ES, G--ES) como factor inter-sujetos y sesión (20 niveles) como factor intra-sujeto, aplicando la corrección de Greenhouse–Geisser cuando proceda y reportando $\eta^2_p$ como estimación del tamaño del efecto.
+A continuación se presenta la pauta de resultados que se prevé obtener con el protocolo descrito. Todos los resultados que se muestran son hipotéticos y derivados del diseño propuesto, no de datos empíricos reales. Los valores se expresan como media ± error estándar de la media (SEM) y se analizarán mediante un ANOVA mixto con condición de alojamiento (A--ES, A+ES, G+ES, G--ES) como factor inter-sujetos y sesión (20 niveles) como factor intra-sujeto, aplicando la corrección de Greenhouse–Geisser cuando proceda y reportando $\eta^2_p$ como estimación del tamaño del efecto.
 
 El ANOVA mixto revelará un efecto principal de la condición de alojamiento, $F(3, 28) \approx 65$, $p < .001$, $\eta^2_p \approx .87$, y un efecto de la sesión, $F(6.2, 173.4) \approx 58$, $p < .001$, $\eta^2_p \approx .67$, junto con una interacción significativa, $F(18.7, 173.4) \approx 4.8$, $p < .001$, $\eta^2_p \approx .34$.
 
-Las curvas de la Figura~\ref{fig:figura1} ilustran que los sujetos AIS alcanzarán un techo cercano a 2200 lametones ya en la quinta sesión, manteniéndose estables hasta el día 20. Los grupos A+ES y G+ES mostrarán trayectorias intermedias, mientras que G--ES se mantendrá por debajo de 900 lametones durante todo el periodo.
+Las curvas de la Figura~\ref{fig:figura1} ilustran que los sujetos A--ES alcanzarán un techo cercano a 2200 lametones ya en la quinta sesión, manteniéndose estables hasta el día 20. Los grupos A+ES y G+ES mostrarán trayectorias intermedias, mientras que G--ES se mantendrá por debajo de 900 lametones durante todo el periodo.
 
-Mediante comparaciones \textit{post hoc} (Tukey HSD) se confirmará el patrón decreciente AIS > A+ES > G+ES > G--ES en el bloque final de sesiones (16–20), coherente con la hipótesis planteada (Figura~\ref{fig:figura2}).
+Mediante comparaciones \textit{post hoc} (Tukey HSD) se confirmará el patrón decreciente A--ES > A+ES > G+ES > G--ES en el bloque final de sesiones (16–20), coherente con la hipótesis planteada (Figura~\ref{fig:figura2}).
 
 El número de entradas al comedero presentará un efecto principal moderado de la condición, $F(3, 28) \approx 4.2$, $p = .013$, $\eta^2_p \approx .31$, sin interacción significativa con la sesión, $F(18.7, 173.4) \approx 1.1$, $p = .33$.
 
-Los grupos AIS y A+ES realizarán ligeramente más entradas ($\approx 80$ por sesión) que los grupos G+ES y G--ES ($\approx 74$), aunque las diferencias no superarán el ajuste de Tukey. Este resultado previsto sugiere que la orientación alimentaria se mantiene relativamente estable y menos sensible a la manipulación ambiental.
+Los grupos A--ES y A+ES realizarán ligeramente más entradas ($\approx 80$ por sesión) que los grupos G+ES y G--ES ($\approx 74$), aunque las diferencias no superarán el ajuste de Tukey. Este resultado previsto sugiere que la orientación alimentaria se mantiene relativamente estable y menos sensible a la manipulación ambiental.
 
-Los cruces de zona mostrarán un efecto robusto de la condición, $F(3, 28) \approx 22$, $p < .001$, $\eta^2_p \approx .70$. Los animales en aislamiento (AIS y A+ES) registrarán una media de 140 y 125 cruces, respectivamente, frente a 98 en G+ES y 82 en G--ES. La interacción con la sesión no resultará significativa, indicando una activación locomotora sostenida a lo largo del entrenamiento.
+Los cruces de zona mostrarán un efecto robusto de la condición, $F(3, 28) \approx 22$, $p < .001$, $\eta^2_p \approx .70$. Los animales en aislamiento (A--ES y A+ES) registrarán una media de 140 y 125 cruces, respectivamente, frente a 98 en G+ES y 82 en G--ES. La interacción con la sesión no resultará significativa, indicando una activación locomotora sostenida a lo largo del entrenamiento.
 
-Los valores medios ± SEM del bloque final se resumen en el cuadro~\ref{tab:tabla1}, que integra las tres variables dependientes. En conjunto, el patrón confirma que la privación social potencia la PIP y la actividad locomotora, mientras que la vida en grupo, especialmente sin sobreestimulación sensorial, ejerce un efecto amortiguador.
+Los valores medios ± SEM del bloque final se resumen en la tabla~\ref{tab:tabla1}, que integra las tres variables dependientes. En conjunto, el patrón confirma que la privación social potencia la PIP y la actividad locomotora, mientras que la vida en grupo, especialmente sin sobreestimulación sensorial, ejerce un efecto amortiguador.
+
 
 \begin{table*}[t]
     \centering
-    \caption{Medias (± SEM) esperadas en lametones, entradas al comedero y cruces de zona (sesiones 16--20)}
+    \begin{doublespace}
+    \captionsetup{labelfont=bf, labelsep=none}
+    \caption{\textit{\protect\\Medias (± SEM) esperadas en lametones, entradas al comedero y cruces de zona (sesiones 16--20)}}
     \label{tab:tabla1}
-    \begin{tabular}{lccc}
+    \end{doublespace}
+    \begin{tabularx}{\textwidth}{lXXX}
     \toprule
     \textbf{Condición} & \textbf{Lametones} & \textbf{Entradas al comedero} & \textbf{Cruces de zona} \\
     \midrule
-    AIS   & $2100 \pm 150$ & $80 \pm 5$ & $150 \pm 10$ \\
+    A-ES   & $2100 \pm 150$ & $80 \pm 5$ & $150 \pm 10$ \\
     A+ES  & $1800 \pm 130$ & $78 \pm 6$ & $130 \pm 12$ \\
     G+ES  & $1200 \pm 110$ & $75 \pm 5$ & $100 \pm 8$ \\
     G--ES & $800 \pm 90$   & $73 \pm 4$ & $85 \pm 7$ \\
     \bottomrule
-    \end{tabular}
-    
+    \end{tabularx}
     \vspace{1mm}
-    \parbox{\textwidth}{\small \textbf{Nota.} AIS: aislamiento sin estimulación sensorial; A+ES: aislamiento con estimulación sensorial; G+ES: grupo con estimulación sensorial; G--ES: grupo sin estimulación sensorial.}
 \end{table*}
 
 
 \begin{figure}[H]
+\begin{doublespace}
+\captionsetup{labelfont=bf, labelsep=none}
+\caption{\textit{\protect\\Evolución temporal de la polidipsia inducida por programa.}}
+\label{fig:figura1}
+\end{doublespace}
 \centering
 \includegraphics[width=0.45\textwidth]{figura1.png}
-\caption{Evolución temporal de la polidipsia inducida por programa. Media ± SEM de lametones por sesión durante los 20 días para cada condición experimental.}
-\label{fig:figura1}
 \end{figure}
 
 \begin{figure}[H]
+\begin{doublespace}
+\captionsetup{labelfont=bf, labelsep=none}    
+\caption{\textit{\protect\\Distribución individual (boxplots) de lametones en el bloque final de sesiones (16–20)}}
+\label{fig:figura2}
+\end{doublespace}
 \centering
 \includegraphics[width=0.45\textwidth]{figura2.png}
-\caption{Distribución individual (boxplots) de lametones en el bloque final de sesiones (16–20). El patrón decreciente AIS > A+ES > G+ES > G--ES refuerza la hipótesis.}
-\label{fig:figura2}
 \end{figure}
 
 
