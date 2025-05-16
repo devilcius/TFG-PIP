@@ -54,6 +54,7 @@ GROUPS: Dict[str, Dict[str, float]] = {
     "G–ES": {"plateau":  800, "k": 0.15},
 }
 
+
 # -----------------------------------------------------------------------------
 # Simulación o carga de datos ---------------------------------------------------
 # -----------------------------------------------------------------------------
@@ -85,14 +86,14 @@ MARKERS = {"A–ES": "o", "A+ES": "s", "G+ES": "^", "G–ES": "d"}
 
 
 def plot_timecourse(data: Dict[str, np.ndarray], out_path: str) -> None:
-    """Genera la figura de curvas de adquisición (Figura 1)."""
+    """Genera la figura de curvas de adquisición (Figura 1)."""
     fig, ax = plt.subplots(figsize=(8, 5))
     for name, matrix in data.items():
         means = matrix.mean(axis=0)
         sems = matrix.std(axis=0, ddof=1) / np.sqrt(matrix.shape[0])
         ax.plot(
             SESSIONS,
-            means,
+            np.round(means),  # Redondeamos los valores de la media
             linestyle=LINE_STYLES[name],
             marker=MARKERS[name],
             color="black",
@@ -100,8 +101,8 @@ def plot_timecourse(data: Dict[str, np.ndarray], out_path: str) -> None:
         )
         ax.fill_between(
             SESSIONS,
-            means - sems,
-            means + sems,
+            np.round(means - sems), # Redondeamos el intervalo inferior
+            np.round(means + sems), # Redondeamos el intervalo superior
             color="black",
             alpha=0.1,
         )
@@ -110,6 +111,7 @@ def plot_timecourse(data: Dict[str, np.ndarray], out_path: str) -> None:
     ax.set_ylabel("lametones")
     ax.legend(title="condición")
     ax.grid(True)
+    ax.xaxis.set_major_locator(plt.MaxNLocator(integer=True)) # Aseguramos enteros en el eje x
     fig.tight_layout()
     fig.savefig(out_path, dpi=300)
     plt.close(fig)
